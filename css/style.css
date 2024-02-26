@@ -9,10 +9,151 @@ img{
     max-width: 100%;
 }
 
+ul{
+    list-style: none;
+}
+
 /* COMMON */
 
+
 /* HEADER */
+header{
+    background-color: rgb(255 105 0);
+    min-height: 100px;
+    padding: 30px 0;
+
+    /* position */
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    /* debug */
+    border: 1px dashed black;
+    height: 30px;
+}
+
+.logo{
+    width: 60%;
+
+    /* debug */
+    background-color: lightcyan;
+    height: 20px;
+}
+
+.sex, .icons{
+    width: 20%;
+
+    /* debug */
+    background-color: lightgreen;
+    height: 20px;
+}
+
+.sex ul, .icons ul{
+    display: flex;
+    gap: 1em;
+}
 
 /* MAIN */
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1100px;
+    margin: 150px auto 50px;
+
+    /* debug */
+    background-color: lightcoral;
+    min-height: 300px;
+}
+
+.col{
+    width: calc(100%/3);
+    padding: 10px;
+    margin-bottom: 30px;
+    position: relative;
+
+    /* debug */
+    border: 1px solid black;
+    min-height: 600px;
+}
+
+.photo{
+    /* debug */
+    background-color: purple;
+    height: 500px;
+}
+
+.photo-hover{
+    display: none;
+}
+
+.description{
+    /* debug */
+    background-color: blue;
+    height: 100px;
+}
+
+.wishlist{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+
+    /*debug*/
+    background-color: white;
+    height: 20px;
+    width: 20px;
+}
+
+.discount{
+    position: absolute;
+    bottom: 25%;
+    background-color: rgb(255 0 0);
+
+    /* debug */
+    min-height: 10px;
+    min-width: 10px;
+}
+
+.sustainability{
+    position: absolute;
+    bottom: 25%;
+    left: 40px;
+    background-color: rgb(0 255 0);
+
+    /* debug */
+    min-height: 10px;
+    min-width: 10px;
+}
+
+.sust-no-disc{
+    position: absolute;
+    bottom: 25%;
+    left: 10px;
+}
 
 /* FOOTER */
+footer{
+    background-color: rgb(26 26 26);
+    padding: 20px 0;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    /* debug */
+    height: 50px;
+    border: 1px dashed white;
+}
