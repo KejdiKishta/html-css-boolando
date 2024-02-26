@@ -114,6 +114,17 @@ button:hover i{
     color: red;
 }
 
+.price{
+    color: red;
+    font-weight: bold;
+}
+
+.l-trough{
+    color: black;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
 .discount{
     position: absolute;
     bottom: 5%;
